@@ -31,7 +31,7 @@ const Philosophy = () => {
             <img 
               src={philosophyBackground} 
               alt="Natural wellness philosophy" 
-              className="rounded-lg shadow-lg w-full h-auto"
+              className="rounded-lg shadow-lg w-3/5 h-auto mx-auto"
             />
           </div>
         </div>
