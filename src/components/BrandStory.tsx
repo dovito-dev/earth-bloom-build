@@ -1,42 +1,36 @@
-import founderImage from "@/assets/founder-image.jpg";
+import brandStoryBackground from "@/assets/brand-story-background.jpg";
 
 const BrandStory = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12 animate-fade-in">
+    <section className="py-20 relative overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={brandStoryBackground} 
+          alt="The Rosa Terra story" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/90" />
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="animate-fade-in">
             <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-brand-warm-earth">
               The Why Behind Rosa Terra
             </h2>
-            <p className="font-serif text-xl text-muted-foreground italic">
-              Rose of the Earth
+            <p className="font-serif text-xl text-muted-foreground mb-8 italic leading-relaxed">
+              "I created Rosa Terra because I wanted wellness products I could trust during the most 
+              important journey of my life."
             </p>
-          </div>
-
-          <div className="grid md:grid-cols-5 gap-8 items-center animate-fade-in">
-            <div className="md:col-span-2">
-              <img 
-                src={founderImage} 
-                alt="Founder of Rosa Terra Wellness" 
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
-            </div>
-
-            <div className="md:col-span-3 space-y-4 font-sans text-muted-foreground leading-relaxed">
-              <p>
-                As a midwifery professional and mother, I've witnessed firsthand the overwhelming amount of conflicting advice expecting mothers receive about wellness products.
-              </p>
-              <p>
-                Rosa Terra was born from a simple question: <em>What if we could cut through the noise and offer products that are both naturally sourced and medically sound?</em>
-              </p>
-              <p>
-                We don't chase trends. We don't make extreme claims. Instead, we carefully curate products with proven ingredients, backed by research and recommended by healthcare professionals who understand pregnancy.
-              </p>
-              <p className="font-serif text-brand-warm-earth text-lg pt-4">
-                "Every product tells a story of intentional care—for you, your baby, and the earth we share."
-              </p>
-            </div>
+            <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
+              As a midwife and mother, I've seen firsthand how overwhelming the wellness industry can be 
+              for expecting parents. Too many products, too many claims, not enough transparency.
+            </p>
+            <p className="font-sans text-lg text-muted-foreground leading-relaxed">
+              Rosa Terra is my answer to that chaos. Every product is something I've personally researched, 
+              tested, and would recommend to my clients. Simple, science-backed wellness that celebrates 
+              the beauty of motherhood.
+            </p>
           </div>
         </div>
       </div>

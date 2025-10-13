@@ -1,19 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-image.jpg";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20">
+    <section className="relative h-[60vh] md:h-[55vh] lg:h-[50vh] flex items-center pt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={heroImage} 
-          alt="Natural wellness products" 
-          className="w-full h-full object-cover opacity-40"
+          src={heroBackground} 
+          alt="Natural wellness for motherhood" 
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/70" />
+        <div className="absolute inset-0 bg-black/10" />
       </div>
+      
+      {/* Gradient transition to next section */}
+      <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-b from-transparent via-transparent to-background z-0" />
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">

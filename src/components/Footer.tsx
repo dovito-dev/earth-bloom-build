@@ -11,7 +11,7 @@ const Footer = () => {
             <img 
               src={logo} 
               alt="Rosa Terra Wellness" 
-              className="h-12 w-auto mb-4"
+              className="h-18 w-auto mb-4"
             />
             <p className="font-sans text-sm text-muted-foreground max-w-md">
               Modern prenatal wellness backed by medical science and nature's wisdom. 
@@ -50,19 +50,19 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/shipping-returns" className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors">
                   Shipping & Returns
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/privacy-policy" className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/terms-conditions" className="font-sans text-sm text-muted-foreground hover:text-primary transition-colors">
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

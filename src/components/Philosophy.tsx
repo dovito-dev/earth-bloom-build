@@ -1,21 +1,12 @@
-import philosophyImage from "@/assets/philosophy-image.jpg";
+import philosophyBackground from "@/assets/philosophy-background.jpg";
 
 const Philosophy = () => {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Image */}
-          <div className="order-2 md:order-1 animate-fade-in">
-            <img 
-              src={philosophyImage} 
-              alt="Expecting mother enjoying herbal tea" 
-              className="rounded-lg shadow-lg w-full h-auto"
-            />
-          </div>
-
           {/* Content */}
-          <div className="order-1 md:order-2 animate-fade-in">
+          <div className="animate-fade-in">
             <h2 className="font-display text-4xl md:text-5xl font-light mb-6 text-brand-warm-earth">
               Our Philosophy
             </h2>
@@ -33,6 +24,15 @@ const Philosophy = () => {
                 "Modern wellness that celebrates the simple joys of life."
               </p>
             </div>
+          </div>
+
+          {/* Image */}
+          <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <img 
+              src={philosophyBackground} 
+              alt="Natural wellness philosophy" 
+              className="rounded-lg shadow-lg w-full h-auto"
+            />
           </div>
         </div>
       </div>
