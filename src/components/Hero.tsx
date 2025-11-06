@@ -4,7 +4,7 @@ import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative h-[60vh] md:h-[55vh] lg:h-[50vh] flex items-center pt-20">
+    <section className="relative h-[60vh] md:h-[55vh] lg:h-[50vh] flex items-center pt-16 md:pt-20">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
