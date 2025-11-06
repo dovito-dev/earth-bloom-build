@@ -1,30 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative h-[60vh] md:h-[55vh] lg:h-[50vh] flex items-center pt-16 md:pt-20">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBackground} 
-          alt="Natural wellness for motherhood" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/10" />
-      </div>
-      
+    <section className="relative min-h-[70vh] flex items-center justify-center bg-background">
       {/* Gradient transition to next section */}
       <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-b from-transparent via-transparent to-background z-0" />
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-2xl animate-fade-in">
-          <h1 className="font-display text-5xl md:text-7xl font-light text-brand-warm-earth mb-6 leading-tight">
+      <div className="container mx-auto px-4 py-20 relative z-10">
+        <div className="max-w-3xl mx-auto text-center animate-fade-in">
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-light text-brand-warm-earth mb-6 leading-tight">
             Nurturing Wellness for Every Stage of Motherhood
           </h1>
-          <p className="font-sans text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+          <p className="font-sans text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
             Carefully curated, research-backed natural products for expecting mothers. 
             Simple wellness that honors both medical science and nature's wisdom.
           </p>
